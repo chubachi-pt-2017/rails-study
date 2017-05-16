@@ -1,0 +1,6 @@
+User.create(:user_name => '新妻健介', :job_title => 'ソフトウェアエンジニア', :company => "hoge株式会社")
+User.create(:user_name => '石田弘之', :job_title => '人事マネージャー', :company => "fuga株式会社")
+User.create(:user_name => '増田均', :job_title => 'プロジェクトマネージャー', :company => "foo株式会社")
+User.create(:user_name => '武内義之', :job_title => 'プロジェクトマネージャー', :company => "foo株式会社")
+User.create(:user_name => '山田貢生', :job_title => 'ソフトウェアエンジニア', :company => "hoge株式会社")
+User.create(:user_name => '其力格尓', :job_title => '学生', :company => "産業技術大学院大学")

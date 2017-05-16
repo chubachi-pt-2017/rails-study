@@ -1,0 +1,162 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote {
+  &:before, &:after {
+    content: '';
+    content: none; } }
+
+q {
+  &:before, &:after {
+    content: '';
+    content: none; } }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+.search-result {
+	background: #ffffff;
+	margin: 50px 0 50px 0;
+}
+
+.engineer-list {
+	&__engineer {
+		height: 100px;
+		padding: 10px 20px 10px 20px;
+		border-bottom: 1px solid #f5f5f5;
+		a {
+			text-decoration: none;
+			color: rgba(0,0,0,.55);
+		}
+	}
+
+	&__picture {
+		width: 80px;
+		height: 80px;
+		float:left;
+	}
+
+	&__info {
+		float:left;
+		height: 100%;
+		max-width: 240px;
+		h2 {
+			margin: 5px 0 10px 10px;
+			color: #353535;
+
+		}
+		h3 {
+			margin: 5px 0 10px 10px;
+		}
+	}
+
+	@media screen and (max-width: 340px) {
+		&__info {
+			float:left;
+			height: 100%;
+			max-width: 168px;
+			h2 {
+				margin: 5px 0 10px 10px;
+				color: #353535;
+			}
+			h3 {
+				margin: 5px 0 10px 10px;
+				font-size: 13px;
+			}
+		}
+	}
+}
+
+.footer-nav {
+  display: table;
+  text-align: center;
+  width: 100%;
+  background: #0073b1;
+	position: fixed;
+  bottom: 0px;
+  padding: 5px 0 5px 0;  
+  &__menu {
+  	display: table-cell;
+  	vertical-align: middle;  	
+  }
+}
+
+header {
+	height: 50px;
+	background: #232f3e;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	.header-contents {
+		.logo {
+			display: inline-block;
+			img {
+				height: 50px;
+				margin-left: 15px;
+			}
+		}
+
+		.search-box {
+			margin-bottom: 10px;
+			float: right;
+			input {
+				width: 320px;
+				height: 30px;
+				margin: 7px;
+				font-size: 15px;
+			}
+		}
+
+		@media screen and (max-width: 340px) {
+			.search-box {
+				margin-bottom: 10px;
+				float: right;
+				input {
+					width: 235px;
+					height: 30px;
+					margin: 7px;
+					font-size: 15px;
+				}
+			}
+		}
+
+		@media screen and (min-width: 341px) and ( max-width: 375px) {
+			.search-box {
+				margin-bottom: 10px;
+				float: right;
+				input {
+					width: 275px;
+					height: 30px;
+					margin: 7px;
+					font-size: 15px;
+				}
+			}
+		}
+
+	}
+}

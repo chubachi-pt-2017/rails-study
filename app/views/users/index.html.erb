@@ -1,0 +1,41 @@
+<div class="allwrap">
+	<header>
+	<div class="header-contents">
+		<div class="logo">
+			<h1>
+				<img src="https://lh3.googleusercontent.com/-6V8xOA6M7BA/AAAAAAAAAAI/AAAAAAAAAAA/rzlHcD0KYwo/photo.jpg?sz=120" alt="レジュメサービスロゴ">
+			</h1>
+		</div>
+		<div class="search-box">
+			<input type="text" name="keywords" placeholder="skills, people, companies...">
+		</div>
+	</div>
+	</header>
+	<main>
+		<section class="search-result">
+			<ul class="engineer-list">
+			  <% @engineers.each do |e| %>
+  				<li class="engineer-list__engineer">
+  					<a href="/">
+  						<img src="https://lh3.googleusercontent.com/-6V8xOA6M7BA/AAAAAAAAAAI/AAAAAAAAAAA/rzlHcD0KYwo/photo.jpg?sz=120" alt="新妻健介" class="engineer-list__picture">
+  						<div class="engineer-list__info">
+  							<h2><%= e.user_name %></h2>
+  							<h3><%= e.job_title %></h3>
+  							<h3><%= e.company %></h3>
+  						</div>
+  					</a>
+  				</li>
+  			<% end %>
+			</ul>
+		</section>
+	</main>
+	<footer>
+		<nav>
+			<ul class="footer-nav">
+				<li class="footer-nav__menu"><img src="<%= image_path("sp/commons/home.png") %>" alt="ホーム"></li>
+				<li class="footer-nav__menu"><img src="<%= image_path("sp/commons/message.png") %>" alt="メッセージ"></li>
+				<li class="footer-nav__menu"><img src="<%= image_path("sp/commons/resume.png") %>" alt="レジュメ"></li>
+			</ul>
+		</nav>
+	</footer>
+</div><!-- end of all wrap -->
